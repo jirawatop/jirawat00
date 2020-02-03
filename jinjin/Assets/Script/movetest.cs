@@ -192,8 +192,8 @@ public class movetest : MonoBehaviour
         }
         else if (isJumping)
         {
-          //  if (input.jumpHeld)
-            //    rigidbody2d.AddForce(new Vector2(0f, jumpHoldForce), ForceMode2D.Impulse);
+            if (input.jumpHeld)
+                rigidbody2d.AddForce(new Vector2(0f, jumpHoldForce), ForceMode2D.Impulse);
 
             if (jumpTime <= Time.time)
                 isJumping = false;
