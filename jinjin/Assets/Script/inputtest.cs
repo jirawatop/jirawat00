@@ -63,8 +63,8 @@ public class inputtest : MonoBehaviour
         jumpPressed = Input.GetButtonDown("Jump");
         //jumpPressed = Input.GetButtonDown("Jump");
         jumpHeld = Input.GetButtonDown("Jump");
-       // crouchPressed = crouchPressed || Input.GetButton("Crouch");
-        //crouchHeld = crouchPressed || Input.GetButton("Crouch");
+       crouchPressed = crouchPressed || Input.GetButton("Crouch");
+       crouchHeld = crouchPressed || Input.GetButton("Crouch");
             
     }
     /*
